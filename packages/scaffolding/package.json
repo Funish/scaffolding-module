@@ -1,0 +1,37 @@
+{
+  "name": "@funish/scaffolding",
+  "version": "0.0.0",
+  "description": "Programmatically build scaffolding, powered by Funish.",
+  "main": "dist/index.mjs",
+  "scripts": {
+    "prepack": "unbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Funish/scaffolding-module.git"
+  },
+  "keywords": [
+    "scaffolding",
+    "handlebars"
+  ],
+  "author": {
+    "name": "Funish",
+    "email": "official@funish.net",
+    "url": "https://funish.net/"
+  },
+  "contributors": [
+    {
+      "name": "Demo Macro",
+      "email": "abc@imst.xyz",
+      "url": "https://imst.xyz/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Funish/scaffolding-module/issues"
+  },
+  "homepage": "https://github.com/Funish/scaffolding-module#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
+}

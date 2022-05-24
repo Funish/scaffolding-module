@@ -1,0 +1,55 @@
+{
+  "name": "@funish/scaffolding-module",
+  "version": "0.0.0",
+  "description": "Programmatically build scaffolding, powered by Funish.",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r prepack",
+    "lint:js": "eslint --ext \".js,.mjs,.ts\" --ignore-path .gitignore",
+    "lint:prettier": "prettier --check . --ignore-path .gitignore",
+    "lint": "pnpm lint:js && pnpm lint:prettier",
+    "lintfix": "prettier --write --list-different . --ignore-path .gitignore && pnpm lint:js --fix",
+    "postinstall": "githooks install"
+  },
+  "lint-staged": {
+    "*.{js,mjs,ts}": "eslint --cache",
+    "*.**": "prettier --check --ignore-unknown"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Funish/scaffolding-module.git"
+  },
+  "keywords": [
+    "scaffolding",
+    "handlebars"
+  ],
+  "author": {
+    "name": "Funish",
+    "email": "official@funish.net",
+    "url": "https://funish.net/"
+  },
+  "contributors": [
+    {
+      "name": "Demo Macro",
+      "email": "abc@imst.xyz",
+      "url": "https://imst.xyz/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Funish/scaffolding-module/issues"
+  },
+  "homepage": "https://github.com/Funish/scaffolding-module#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "@funish/eslint-config": "0.0.1-1",
+    "@funish/githooks": "0.0.2-4",
+    "@types/node": "^17.0.33",
+    "eslint": "^8.16.0",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4",
+    "unbuild": "^0.7.4"
+  }
+}
