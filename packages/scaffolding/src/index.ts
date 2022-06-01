@@ -2,7 +2,7 @@ import Handlebars from "handlebars";
 
 const { compile } = Handlebars;
 
-export function isCompile(input: any, options?: CompileOptions) {
+export function isCompile(input: string, options?: CompileOptions) {
   const template = compile(input, options);
   template({});
 }
